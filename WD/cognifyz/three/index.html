@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interactive Elements</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #166088;
+            --accent-color: #4fc3f7;
+            --error-color: #e74c3c;
+            --success-color: #2ecc71;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .component {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            margin-top: 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+        
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-right: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .calculator-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .calculator-form label {
+            font-weight: 600;
+        }
+        
+        .calculator-form input {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .calculator-form input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.2);
+        }
+        
+        .result-container {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .success {
+            background-color: rgba(46, 204, 113, 0.2);
+            color: var(--success-color);
+        }
+        
+        .error {
+            background-color: rgba(231, 76, 60, 0.2);
+            color: var(--error-color);
+        }
+        
+        .color-display {
+            width: 100px;
+            height: 100px;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        
+        .color-info {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Color Changing Button Component -->
+        <div class="component">
+            <h2>Color Changing Button</h2>
+            <p>Click the button to randomly change the color of the display box.</p>
+            <button id="changeColorBtn" class="btn">Change Color</button>
+            <div id="colorDisplay" class="color-display" style="background-color: #4a6fa5;"></div>
+            <p>Current color: <span id="colorValue" class="color-info">#4a6fa5</span></p>
+        </div>
+        
+        <!-- Time-Based Greeting Component -->
+        <div class="component">
+            <h2>Time-Based Greeting</h2>
+            <p>Click the button to see a personalized greeting based on the current time.</p>
+            <button id="showGreetingBtn" class="btn">Show Greeting</button>
+        </div>
+        
+        <!-- Basic Calculator Component -->
+        <div class="component">
+            <h2>Basic Calculator</h2>
+            <p>Enter two numbers to calculate their sum.</p>
+            <form class="calculator-form" id="calculatorForm">
+                <label for="number1">First Number:</label>
+                <input type="number" id="number1" required>
+                
+                <label for="number2">Second Number:</label>
+                <input type="number" id="number2" required>
+                
+                <div style="grid-column: span 2;">
+                    <button type="submit" class="btn">Calculate Sum</button>
+                </div>
+            </form>
+            <div id="calculatorResult" class="result-container" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        // Color Changing Button
+        const changeColorBtn = document.getElementById('changeColorBtn');
+        const colorDisplay = document.getElementById('colorDisplay');
+        const colorValue = document.getElementById('colorValue');
+        
+        changeColorBtn.addEventListener('click', () => {
+            // Generate random RGB color
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            const randomColor = `rgb(${r}, ${g}, ${b})`;
+            
+            colorDisplay.style.backgroundColor = randomColor;
+            colorValue.textContent = randomColor;
+            
+            // Add animation effect
+            colorDisplay.style.transform = 'scale(1.1)';
+            setTimeout(() => {
+                colorDisplay.style.transform = 'scale(1)';
+            }, 300);
+        });
+
+        // Time-Based Greeting
+        const showGreetingBtn = document.getElementById('showGreetingBtn');
+        
+        showGreetingBtn.addEventListener('click', () => {
+            const now = new Date();
+            const hours = now.getHours();
+            let greeting;
+            
+            if (hours < 5) {
+                greeting = "Good night! 🌙";
+            } else if (hours < 12) {
+                greeting = "Good morning! ☀️";
+            } else if (hours < 17) {
+                greeting = "Good afternoon! 🌤️";
+            } else if (hours < 21) {
+                greeting = "Good evening! 🌆";
+            } else {
+                greeting = "Good night! 🌃";
+            }
+            
+            const timeString = now.toLocaleTimeString();
+            const dateString = now.toLocaleDateString();
+            
+            alert(`${greeting}\n\nCurrent time: ${timeString}\nToday is: ${dateString}`);
+        });
+
+        // Basic Calculator
+        const calculatorForm = document.getElementById('calculatorForm');
+        const calculatorResult = document.getElementById('calculatorResult');
+        
+        calculatorForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+            
+            if (isNaN(num1) || isNaN(num2)) {
+                calculatorResult.textContent = "Please enter valid numbers in both fields";
+                calculatorResult.className = "result-container error";
+                calculatorResult.style.display = "block";
+                return;
+            }
+            
+            const sum = num1 + num2;
+            calculatorResult.textContent = `The sum of ${num1} and ${num2} is ${sum}`;
+            calculatorResult.className = "result-container success";
+            calculatorResult.style.display = "block";
+            
+            // Reset form
+            calculatorForm.reset();
+        });
+    </script>
+</body>
+</html>

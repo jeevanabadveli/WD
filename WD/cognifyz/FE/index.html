@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards & Grid</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #f8f9fa;
+        }
+        .section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+            color: #2c3e50;
+        }
+        .framework-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .framework-logo {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
+        }
+        .grid-item {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .grid-item:hover {
+            transform: translateY(-3px);
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Responsive UI Components</h1>
+        
+        <!-- Bulma Card Components Section -->
+        <section class="section">
+            <div class="framework-header">
+                <img src="b.png" alt="Bulma" class="framework-logo">
+                <h2 class="section-title">Bulma Card Components</h2>
+            </div>
+            
+            <div class="columns is-multiline">
+                <!-- Card 1 -->
+                <div class="column is-one-third-desktop is-half-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="travel.jpg" alt="Travel">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="tp.jpeg" alt="Profile" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-5">Travel Adventures</p>
+                                    <p class="subtitle is-6">@worldtraveler</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Explore breathtaking destinations around the world with our expert guides and curated travel packages.
+                                <br>
+                                <small class="has-text-grey">Last updated 3 days ago</small>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-primary">Save</a>
+                                <a href="#" class="card-footer-item has-text-primary">Share</a>
+                                <a href="#" class="card-footer-item has-text-primary">Book Now</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="column is-one-third-desktop is-half-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="fitness.jpeg" alt="Fitness">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="fp.jpeg" alt="Profile" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-5">Fitness Program</p>
+                                    <p class="subtitle is-6">@fitnesstrainer</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Transform your body and mind with our 12-week fitness program designed for all skill levels.
+                                <br>
+                                <small class="has-text-grey">Last updated 1 week ago</small>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-info">Details</a>
+                                <a href="#" class="card-footer-item has-text-info">Join Now</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="column is-one-third-desktop is-half-tablet">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="cooking.jpeg" alt="Cooking">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="cp.jpeg" alt="Profile" class="is-rounded">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-5">Cooking Masterclass</p>
+                                    <p class="subtitle is-6">@masterchef</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Learn professional cooking techniques from world-class chefs in our interactive online classes.
+                                <br>
+                                <small class="has-text-grey">New class every Monday</small>
+                            </div>
+                            <footer class="card-footer">
+                                <a href="#" class="card-footer-item has-text-success">Recipes</a>
+                                <a href="#" class="card-footer-item has-text-success">Schedule</a>
+                                <a href="#" class="card-footer-item has-text-success">Enroll</a>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bootstrap Grid Layout Section -->
+        <section class="section">
+            <div class="framework-header">
+                <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" class="framework-logo">
+                <h2 class="section-title">Bootstrap Grid Layout</h2>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Grid Item 1 -->
+                <div class="col">
+                    <div class="grid-item p-4 border rounded h-100">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="wd.png" class="img-fluid rounded" alt="Web Design">
+                        </div>
+                        <h3 class="h5">Web Design</h3>
+                        <p class="text-muted">Create beautiful, responsive websites with modern design principles and techniques.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">Beginner</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 2 -->
+                <div class="col">
+                    <div class="grid-item p-4 border rounded h-100">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="md.jpeg" class="img-fluid rounded" alt="Mobile App">
+                        </div>
+                        <h3 class="h5">Mobile Development</h3>
+                        <p class="text-muted">Build cross-platform mobile applications with React Native and Flutter frameworks.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark">Intermediate</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 3 -->
+                <div class="col">
+                    <div class="grid-item p-4 border rounded h-100">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="ds.jpeg" class="img-fluid rounded" alt="Data Science">
+                        </div>
+                        <h3 class="h5">Data Science</h3>
+                        <p class="text-muted">Master data analysis, visualization, and machine learning with Python and R.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Advanced</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 4 -->
+                <div class="col">
+                    <div class="grid-item p-4 border rounded h-100">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="u.png" class="img-fluid rounded" alt="UX Design">
+                        </div>
+                        <h3 class="h5">UX/UI Design</h3>
+                        <p class="text-muted">Learn user-centered design principles and create intuitive digital experiences.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-primary">Beginner</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 5 -->
+                <div class="col">
+                    <div class="grid-item p-4 border rounded h-100">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="cc.png" class="img-fluid rounded" alt="Cloud Computing">
+                        </div>
+                        <h3 class="h5">Cloud Computing</h3>
+                        <p class="text-muted">Deploy and manage applications on AWS, Azure, and Google Cloud platforms.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-warning text-dark">Intermediate</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Grid Item 6 -->
+                <div class="col">
+                    <div class="grid-item p-4 border rounded h-100">
+                        <div class="ratio ratio-16x9 mb-3">
+                            <img src="dev.png" class="img-fluid rounded" alt="DevOps">
+                        </div>
+                        <h3 class="h5">DevOps Engineering</h3>
+                        <p class="text-muted">Implement CI/CD pipelines and infrastructure as code with modern DevOps tools.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="badge bg-danger">Advanced</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
