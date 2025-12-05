@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugar Cosmetics</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <img src="logo.png" alt="Loading" class="loader-logo">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>Free shipping on orders above ₹799 | Use code SUGAR10 for 10% off</p>
+    </div>
+
+    <!-- Sticky Header -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="sclogo.png" alt="Sugar Cosmetics Logo">
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#" class="nav-link">SHOP</a></li>
+                    <li><a href="#" class="nav-link">BESTSELLERS</a></li>
+                    <li><a href="#" class="nav-link">NEW LAUNCHES</a></li>
+                    <li><a href="#" class="nav-link">OFFERS</a></li>
+                    <li><a href="#" class="nav-link">SUGAR FAM</a></li>
+                    <li><a href="#" class="nav-link">BLOG</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-bag"><span class="cart-count">0</span></i></a>
+            </div>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">BESTSELLERS</a></li>
+            <li><a href="#">NEW LAUNCHES</a></li>
+            <li><a href="#">OFFERS</a></li>
+            <li><a href="#">SUGAR FAM</a></li>
+            <li><a href="#">BLOG</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Meet Your New Favorite Matte Lipsticks</h1>
+            <p class="hero-subtitle">Long-lasting, smudge-proof, and oh-so-pigmented!</p>
+            <button class="shop-now pulse">SHOP NOW</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Scrolling Banner -->
+    <div class="scrolling-banner">
+        <div class="scrolling-content">
+            <span>NEW LAUNCH: SUGAR SMUDGE ME NOT LIQUID LIPSTICK</span>
+            <span>FREE DELIVERY ON ORDERS ABOVE ₹799</span>
+            <span>BUY 1 GET 1 FREE ON ALL KAJALS</span>
+        </div>
+    </div>
+
+    <!-- Categories with Hover Effects -->
+    <section class="categories">
+        <h2 class="section-title">SHOP BY CATEGORY</h2>
+        <div class="category-grid">
+            <div class="category-item">
+                <div class="category-img">
+                    <img src="lips.webp" alt="Lips" class="hover-scale">
+                </div>
+                <h3>Lips</h3>
+                <button class="category-btn">EXPLORE</button>
+            </div>
+            <div class="category-item">
+                <div class="category-img">
+                    <img src="eyes.jpeg" alt="Eyes" class="hover-scale">
+                </div>
+                <h3>Eyes</h3>
+                <button class="category-btn">EXPLORE</button>
+            </div>
+            <div class="category-item">
+                <div class="category-img">
+                    <img src="face.jpeg" alt="Face" class="hover-scale">
+                </div>
+                <h3>Face</h3>
+                <button class="category-btn">EXPLORE</button>
+            </div>
+            <div class="category-item">
+                <div class="category-img">
+                    <img src="nails.webp" alt="Nails" class="hover-scale">
+                </div>
+                <h3>Nails</h3>
+                <button class="category-btn">EXPLORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers with Scroll Animation -->
+    <section class="bestsellers">
+        <div class="section-header">
+            <h2 class="section-title">BESTSELLERS</h2>
+            <a href="#" class="view-all">VIEW ALL</a>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="smudge.jpeg" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Smudge Me Not Liquid Lipstick</h3>
+                <p class="product-price">₹799</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="kajal.webp" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Kohl of Honour Intense Kajal</h3>
+                <p class="product-price">₹499</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="stick.jpeg" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Ace of Face Foundation Stick</h3>
+                <p class="product-price">₹999</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="blush.jpeg" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Blush Blush Cream Blush</h3>
+                <p class="product-price">₹599</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="palette.webp" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Eye Told You So Palette</h3>
+                <p class="product-price">₹899</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="mascara.webp" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Lash-a-holic Mascara</h3>
+                <p class="product-price">₹699</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="concelar.jpeg" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>All Star Concealer</h3>
+                <p class="product-price">₹649</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="glow.webp" alt="Product">
+                    <div class="product-badge">BESTSELLER</div>
+                </div>
+                <h3>Glow Highlighter</h3>
+                <p class="product-price">₹549</p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Banner -->
+    <section class="video-banner">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-content">
+            <h2>#SUGARFAM</h2>
+            <p>Join our community of makeup lovers</p>
+            <button class="video-btn">WATCH NOW</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials">
+        <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial-slide active">
+                <div class="testimonial-content">
+                    <p>"The matte lipsticks are amazing! They stay on all day without drying my lips."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="customer-name">- Priya M.</p>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <p>"Best kajal I've ever used! Doesn't smudge and lasts all day."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="customer-name">- Ananya S.</p>
+                </div>
+            </div>
+            <div class="testimonial-slide">
+                <div class="testimonial-content">
+                    <p>"The foundation gives such a natural finish and feels so light on the skin."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="customer-name">- Riya K.</p>
+                </div>
+            </div>
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Newsletter with Floating Animation -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>JOIN THE SUGAR FAM</h2>
+                <p>Subscribe to get updates on new launches, exclusive offers, and more.</p>
+                <form class="newsletter-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="newsletter-btn">SUBSCRIBE</button>
+                    </div>
+                </form>
+            </div>
+            <div class="newsletter-image">
+                <img src="nl.jpeg" alt="Newsletter" class="float-animation">
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <h2 class="section-title">FOLLOW US ON INSTAGRAM</h2>
+        <p class="instagram-handle">@sugarcosmetics</p>
+        <div class="instagram-grid">
+            <div class="instagram-post">
+                <img src="cleansing.webp" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="instagram-post">
+                <img src="toner.webp" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="instagram-post">
+                <img src="moisturizer.jpg" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="instagram-post">
+                <img src="eyecream.jpg" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="instagram-post">
+                <img src="lipbalm.webp" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="instagram-post">
+                <img src="sunscreen.jpg" alt="Instagram Post">
+                <div class="instagram-overlay">
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>CUSTOMER SERVICE</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>ABOUT SUGAR</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>QUICK LINKS</h3>
+                    <ul>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Sugartize You</a></li>
+                        <li><a href="#">Sugartize Me</a></li>
+                        <li><a href="#">Sugar TV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>CONNECT WITH US</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    <div class="app-download">
+                        <p>Download our app</p>
+                        <div class="app-buttons">
+                            <a href="#"><img src="app.jpg" alt="App Store"></a>
+                            <a href="#"><img src="play.jpg" alt="Play Store"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <p>We Accept</p>
+                    <div class="payment-icons">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Sugar Cosmetics. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

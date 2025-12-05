@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Replica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Home Screen -->
+        <div class="screen home-screen active-screen">
+            <header class="app-header">
+                <div class="header-top">
+                    <div class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search Paytm">
+                    </div>
+                    <div class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                </div>
+                <div class="wallet-section">
+                    <div class="wallet-info">
+                        <p>Paytm Wallet Balance</p>
+                        <h2>₹5,247.50</h2>
+                    </div>
+                    <div class="wallet-actions">
+                        <button class="wallet-btn"><i class="fas fa-plus"></i> Add Money</button>
+                        <button class="wallet-btn"><i class="fas fa-book"></i> Passbook</button>
+                    </div>
+                </div>
+            </header>
+
+            <main class="app-main">
+                <section class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="actions-grid">
+                        <div class="action-item" data-service="mobile">
+                            <div class="action-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span>Mobile Recharge</span>
+                        </div>
+                        <div class="action-item" data-service="electricity">
+                            <div class="action-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <span>Electricity</span>
+                        </div>
+                        <div class="action-item" data-service="dth">
+                            <div class="action-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <span>DTH</span>
+                        </div>
+                        <div class="action-item" data-service="metro">
+                            <div class="action-icon">
+                                <i class="fas fa-subway"></i>
+                            </div>
+                            <span>Metro</span>
+                        </div>
+                        <div class="action-item" data-service="credit">
+                            <div class="action-icon">
+                                <i class="fas fa-credit-card"></i>
+                            </div>
+                            <span>Credit Card</span>
+                        </div>
+                        <div class="action-item" data-service="loan">
+                            <div class="action-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <span>Loan</span>
+                        </div>
+                        <div class="action-item" data-service="insurance">
+                            <div class="action-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span>Insurance</span>
+                        </div>
+                        <div class="action-item" data-service="education">
+                            <div class="action-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span>Education</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="offers-section">
+                    <div class="section-header">
+                        <h3>Offers For You</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="offers-carousel">
+                        <div class="offer-slide active">
+                            <img src="i1.jpeg" alt="Offer 1">
+                        </div>
+                        <div class="offer-slide">
+                            <img src="i2.png" alt="Offer 2">
+                        </div>
+                        <div class="offer-slide">
+                            <img src="i3.jpg" alt="Offer 3">
+                        </div>
+                    </div>
+                    <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </section>
+
+                <section class="services-section">
+                    <div class="section-header">
+                        <h3>Recommended For You</h3>
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-train"></i>
+                            </div>
+                            <span>Train Tickets</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <span>Flight Tickets</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-bus"></i>
+                            </div>
+                            <span>Bus Tickets</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <span>Movie Tickets</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="stores-section">
+                    <div class="section-header">
+                        <h3>Paytm Nearby</h3>
+                        <a href="#" class="see-all">See All</a>
+                    </div>
+                    <div class="stores-list">
+                        <div class="store-item">
+                            <div class="store-icon">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <div class="store-info">
+                                <h4>Super Mart</h4>
+                                <p>500m away • Grocery</p>
+                            </div>
+                            <div class="store-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                        <div class="store-item">
+                            <div class="store-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div class="store-info">
+                                <h4>Food Court</h4>
+                                <p>750m away • Restaurant</p>
+                            </div>
+                            <div class="store-arrow">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Wallet Screen -->
+        <div class="screen wallet-screen">
+            <header class="screen-header">
+                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                <h2>Paytm Wallet</h2>
+                <div class="header-icon"></div>
+            </header>
+            <main class="screen-main">
+                <div class="wallet-card">
+                    <div class="wallet-card-header">
+                        <span>Paytm Wallet</span>
+                        <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                    <div class="wallet-card-balance">
+                        <p>Available Balance</p>
+                        <h2>₹5,247.50</h2>
+                    </div>
+                    <div class="wallet-card-number">
+                        <span>XXXX XXXX XXXX 1234</span>
+                    </div>
+                </div>
+                <div class="wallet-actions">
+                    <button class="action-btn"><i class="fas fa-plus"></i> Add Money</button>
+                    <button class="action-btn"><i class="fas fa-rupee-sign"></i> Send Money</button>
+                    <button class="action-btn"><i class="fas fa-qrcode"></i> Scan & Pay</button>
+                </div>
+                <div class="transaction-history">
+                    <h3>Recent Transactions</h3>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Shopping Mart</h4>
+                                <p>Today • 12:45 PM</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹1,249.00
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Mobile Recharge</h4>
+                                <p>Yesterday • 5:30 PM</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹399.00
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Money Added</h4>
+                                <p>Yesterday • 5:00 PM</p>
+                            </div>
+                            <div class="transaction-amount credit">
+                                +₹2,000.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Payment Screen -->
+        <div class="screen payment-screen">
+            <header class="screen-header">
+                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                <h2 class="payment-title">Mobile Recharge</h2>
+                <div class="header-icon"></div>
+            </header>
+            <main class="screen-main">
+                <div class="payment-form">
+                    <div class="form-group">
+                        <label for="mobile-number">Mobile Number</label>
+                        <div class="input-with-icon">
+                            <span>+91</span>
+                            <input type="tel" id="mobile-number" placeholder="Enter mobile number" maxlength="10">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="operator">Select Operator</label>
+                        <select id="operator">
+                            <option value="">Select Operator</option>
+                            <option value="airtel">Airtel</option>
+                            <option value="jio">Jio</option>
+                            <option value="vi">Vi</option>
+                            <option value="bsnl">BSNL</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Recharge Amount</label>
+                        <div class="amount-options">
+                            <button class="amount-option">₹149</button>
+                            <button class="amount-option">₹199</button>
+                            <button class="amount-option">₹249</button>
+                            <button class="amount-option">₹299</button>
+                            <button class="amount-option">₹399</button>
+                            <button class="amount-option">₹499</button>
+                        </div>
+                        <div class="custom-amount">
+                            <input type="number" id="amount" placeholder="Enter custom amount">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment-method">Payment Method</label>
+                        <div class="payment-methods">
+                            <div class="payment-method active">
+                                <i class="fas fa-wallet"></i>
+                                <span>Paytm Wallet</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Credit/Debit Card</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fas fa-university"></i>
+                                <span>UPI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="pay-now-btn">Proceed to Pay</button>
+                </div>
+            </main>
+        </div>
+
+        <!-- Success Screen -->
+        <div class="screen success-screen">
+            <main class="screen-main">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h2>Payment Successful!</h2>
+                <p class="success-message">Your mobile recharge of ₹399 for 9876543210 was successful.</p>
+                <div class="success-details">
+                    <div class="detail-item">
+                        <span>Transaction ID</span>
+                        <span>PTM202307156789</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Date & Time</span>
+                        <span>15 Jul, 2023 • 3:45 PM</span>
+                    </div>
+                    <div class="detail-item">
+                        <span>Payment Method</span>
+                        <span>Paytm Wallet</span>
+                    </div>
+                </div>
+                <button class="done-btn">Done</button>
+                <button class="share-btn"><i class="fas fa-share"></i> Share Receipt</button>
+            </main>
+        </div>
+
+        <!-- Passbook Screen -->
+        <div class="screen passbook-screen">
+            <header class="screen-header">
+                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                <h2>Passbook</h2>
+                <div class="header-icon">
+                    <i class="fas fa-filter"></i>
+                </div>
+            </header>
+            <main class="screen-main">
+                <div class="passbook-tabs">
+                    <button class="tab-btn active">All Transactions</button>
+                    <button class="tab-btn">Payments</button>
+                    <button class="tab-btn">Recharges</button>
+                </div>
+                <div class="transaction-history">
+                    <div class="transaction-date">
+                        <span>Today</span>
+                    </div>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Shopping Mart</h4>
+                                <p>12:45 PM • Payment</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹1,249.00
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-coffee"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Cafe Coffee</h4>
+                                <p>10:30 AM • Payment</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹350.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transaction-date">
+                        <span>Yesterday</span>
+                    </div>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Mobile Recharge</h4>
+                                <p>5:30 PM • Recharge</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹399.00
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-rupee-sign"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Money Added</h4>
+                                <p>5:00 PM • Wallet</p>
+                            </div>
+                            <div class="transaction-amount credit">
+                                +₹2,000.00
+                            </div>
+                        </div>
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-train"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Train Ticket</h4>
+                                <p>2:15 PM • Travel</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹780.00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="transaction-date">
+                        <span>15 Jul, 2025</span>
+                    </div>
+                    <div class="transaction-list">
+                        <div class="transaction-item">
+                            <div class="transaction-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="transaction-info">
+                                <h4>Electricity Bill</h4>
+                                <p>11:20 AM • Bill Payment</p>
+                            </div>
+                            <div class="transaction-amount debit">
+                                -₹1,850.00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Profile Screen -->
+        <div class="screen profile-screen">
+            <header class="screen-header">
+                <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+                <h2>My Profile</h2>
+                <div class="header-icon">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </header>
+            <main class="screen-main">
+                <div class="profile-header">
+                    <div class="profile-pic">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Jeevana Badveli</h3>
+                        <p>+91 9876543210</p>
+                        <p>jeevanabadveli12@gmail.com</p>
+                    </div>
+                </div>
+                <div class="profile-section">
+                    <h4>Account Details</h4>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Paytm Wallet</span>
+                            <span>Balance: ₹5,247.50</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Saved Cards</span>
+                            <span>2 cards saved</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Bank Accounts</span>
+                            <span>1 account linked</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="profile-section">
+                    <h4>Settings</h4>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Privacy Settings</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Notification Settings</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Change Password</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="profile-section">
+                    <h4>Support</h4>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Help Center</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Contact Us</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <div class="profile-item">
+                        <div class="profile-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="profile-content">
+                            <span>Terms & Conditions</span>
+                        </div>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                <button class="logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </main>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <div class="nav-container">
+                <div class="nav-item active" data-screen="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="nav-item" data-screen="wallet">
+                    <i class="fas fa-wallet"></i>
+                    <span>Wallet</span>
+                </div>
+                <div class="nav-item scan-item">
+                    <div class="scan-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <span>Scan</span>
+                </div>
+                <div class="nav-item" data-screen="passbook">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>Passbook</span>
+                </div>
+                <div class="nav-item" data-screen="profile">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
